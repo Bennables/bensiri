@@ -1,13 +1,13 @@
-x=input("yes or no")
+x=input("do you like to eat :")
 if x=="yes":
-    y=input("yes or no")
+    y=input("Do you like pizza")
     if x=="yes":
-        print ("a")
+        print ("you live")
     if x=="no":
-        print ("b")
+        print ("Dieee")
 if x=="no":
-    z=input("yes or no")
+    z=input("Do you like pasta")
     if z=="yes":
-        print("c")
+        print("you live")
     if z=="no":
-        print("d")
+        print("diieeee")
