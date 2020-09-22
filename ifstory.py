@@ -9,3 +9,5 @@ if x=="no":
     z=input("yes or no")
     if z=="yes":
         print("c")
+    if z=="no":
+        print("d")
