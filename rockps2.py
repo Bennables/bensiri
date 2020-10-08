@@ -33,8 +33,15 @@ def game_code(p1,p2):
         print("You Win")
     else:
         print("Please choose a number")
+    
+def streaks():
 
-
+def continuing():
+    continuee = int(input("Do you want to play again? 1. Yes 2. No"))
+    if continuee == 1:
+        return True
+    else:
+        return False
 
     
 def main():
@@ -46,4 +53,5 @@ def main():
         you = int(your_choice())
         CP_choice(CP)
         game_code(CP,you)
+        Play = continuing()
 main()
