@@ -2,12 +2,19 @@ import random
 def opponent():
     #1 = compost 2=recycle 3=trash
     x = random.randint(1,3)
-    print (x)
     return x
 
 def your_choice():
     you = int(input("Do you want to 1. Compost, 2. Recycle or 3. Trash: "))
     return you
+
+def CP_choice(cpu):
+    if cpu == 1:
+        print("CP chose compost")
+    if cpu == 2:
+        print("CP chose recycle")
+    if cpu == 3:
+        print("CP chose trash")
 
 def game_code(p1,p2):
     if p1 == p2:
@@ -27,9 +34,16 @@ def game_code(p1,p2):
     else:
         print("Please choose a number")
 
+
+
     
 def main():
-    CP = int(opponent())
-    you = int(your_choice())
-    game_code(CP,you)
+    Play = True
+    your_score = 0
+    cp_score = 0
+    while Play == True:
+        CP = int(opponent())
+        you = int(your_choice())
+        CP_choice(CP)
+        game_code(CP,you)
 main()
