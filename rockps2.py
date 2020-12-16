@@ -40,7 +40,6 @@ def game_code(p1,p2):
         print("You Win")
         return "b"
     else:
-        print("Please choose a number")
         return "c"
         
 
